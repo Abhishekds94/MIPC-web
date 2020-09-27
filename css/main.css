@@ -1,7 +1,3 @@
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -648,3 +644,5 @@ input.input100 {
   background: #333333;
   color: #fff;
 }
+
+.toast { background-color: rgba(0,127,0) !important; }
