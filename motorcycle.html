@@ -442,21 +442,7 @@
 
 <!--===============================================================================================-->
 
-	<script>
-		
-		var rootRef = firebase.database().ref().child('motorcycle_liability_upto75');
-
-		$('#motorcycle_liability_upto75_btn').click(function(){
-			rootRef.set({
-				
-				motorcycle_liability_upto75_act:$('#motorcycle_liability_upto75_act').val(),
-				motorcycle_liability_upto75_tax:$('#motorcycle_liability_upto75_tax').val(),
-				motorcycle_liability_upto75_paod:$('#motorcycle_liability_upto75_paod').val()
-			});
-		})
-
-
-	</script>
+	<script src="motorcycle.js"></script>
 
 </body>
 </html>
