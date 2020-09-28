@@ -1,4 +1,4 @@
-//Send Values
+/* Send Values to Firebase DB */
 
 //Liability Policy
 
@@ -45,6 +45,25 @@ var rootRef = firebase.database().ref().child('motorcycle_liability_above350');
 	});
 	toastr.success('Values saved!', 'Motorcycle - Above 350cc (Liability)')
 })
+
+
+//Package Policy
+
+//motorcycle_upto75
+$('#motorcycle_package_upto75_btn').click(function(){
+var rootRef = firebase.database().ref().child('motorcycle_package_upto75');
+	rootRef.set({		
+		motorcycle_package_upto75_dop_year1:$('#motorcycle_package_upto75_dop_year1').val(),
+		motorcycle_package_upto75_dop_year2:$('#motorcycle_package_upto75_dop_year2').val(),
+		motorcycle_package_upto75_dop_year3:$('#motorcycle_package_upto75_dop_year3').val(),
+		motorcycle_package_upto75_ndp:$('#motorcycle_package_upto75_ndp').val(),
+		motorcycle_liability_upto75_paod:$('#motorcycle_liability_upto75_paod').val()
+	});
+	toastr.success('Values saved!', 'Motorcycle - Upto 75cc (Package)')
+})
+
+
+/*=======================================================================================================================*/
 
 
 /* Receive Values from Firebase DB */
