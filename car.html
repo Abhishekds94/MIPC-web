@@ -104,13 +104,13 @@
 	
 	<div class="limiter">
 		<div class="container-login100">
-			<div style="padding-top: 3%; padding-bottom: 3%; background-image: url('images/motorcycle.jpg'); width: 100%; text-align: center; color: #fff; font-weight: bolder; height: 400px; background-size: contain; background-repeat: no-repeat; background-size: 100% 100%;">
+			<div style="padding-top: 3%; padding-bottom: 3%; background-image: url('images/car.jpg'); width: 100%; text-align: center; color: #fff; font-weight: bolder; height: 400px; background-size: contain; background-repeat: no-repeat; background-size: 100% 100%;">
 			</div>
 			<div class="area2">
 				
 
 				<div class="card">
-					<h2 style="text-align: center;"><b> Motorcycle</b></h2>
+					<h2 style="text-align: center;"><b>Car</b></h2>
 				  <div class="container">
 
 				  	<div class="accordion" id="accordionMIPC" style="margin-top: 40px; margin-bottom: 30px;">
@@ -119,7 +119,7 @@
 				  	    <div class="card-header" id="headingOne" style="margin-top: 30px;">
 				  	      <h2 class="mb-0">
 				  	        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				  	          Upto 75cc
+				  	          Upto 1000cc
 				  	        </button>
 				  	      </h2>
 				  	    </div>
@@ -144,22 +144,32 @@
 				  	      	    	<h5>Enter the values:</h4>
 				  	      	    	
 				  	      	    	<div class="md-form">
-				  	      	    		<input type="number" id="motorcycle_liability_upto75_act" value="" class="form-control">
-				  	      	    		<label for="motorcycle_liability_upto75_act">Act/Liability</label>
+				  	      	    		<input type="number" id="car_liability_upto1000_act" value="" class="form-control">
+				  	      	    		<label for="car_liability_upto1000_act">Act/Liability</label>
 				  	      	    	</div>
 
 				  	      	    	<div class="md-form">
-				  	      	    		<input type="number" id="motorcycle_liability_upto75_tax" value="" class="form-control">
-				  	      	    		<label for="motorcycle_liability_upto75_tax">Tax</label>
+				  	      	    		<input type="number" id="car_liability_upto1000_ll" value="" class="form-control">
+				  	      	    		<label for="car_liability_upto1000_ll">LL to Driver</label>
 				  	      	    	</div>
 
 				  	      	    	<div class="md-form">
-				  	      	    		<input type="number" id="motorcycle_liability_upto75_paod" class="form-control">
-				  	      	    		<label for="motorcycle_liability_upto75_paod">PA to Owner - Driver</label>
+				  	      	    		<input type="number" id="car_liability_upto1000_lpg" value="" class="form-control">
+				  	      	    		<label for="car_liability_upto1000_lpg">LPG Kit</label>
+				  	      	    	</div>
+
+				  	      	    	<div class="md-form">
+				  	      	    		<input type="number" id="car_liability_upto1000_tax" value="" class="form-control">
+				  	      	    		<label for="car_liability_upto1000_tax">Tax</label>
+				  	      	    	</div>
+
+				  	      	    	<div class="md-form">
+				  	      	    		<input type="number" id="car_liability_upto1000_paod" class="form-control">
+				  	      	    		<label for="car_liability_upto1000_paod">PA to Owner - Driver</label>
 				  	      	    	</div>
 				  	      	    	
 				  	      	    	<center>
-				  	      	    		<button type="button" id="motorcycle_liability_upto75_btn" class="btn btn-dark-green">SAVE</button>
+				  	      	    		<button type="button" id="car_liability_upto1000_btn" class="btn btn-dark-green">SAVE</button>
 				  	      	    	</center>
 
 				  	      	    </div>
@@ -221,7 +231,7 @@
 				  	    <div class="card-header" id="headingTwo">
 				  	      <h2 class="mb-0">
 				  	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				  	          75 to 150 cc
+				  	          1000 to 1500 cc
 				  	        </button>
 				  	      </h2>
 				  	    </div>
@@ -229,41 +239,36 @@
 
 				  	    	<!-- SubType -->
 				  	    	  <div class="accordion" id="accordionMIPCSubTwo" style="margin-right: 30px; margin-left: 30px; margin-bottom: 30px; margin-top: 20px;">
-				  	    	  	<h5>Select the policy type:</h5>
+				  	    	  	<h5>Enter the values:</h4>
+				  	    	  	
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_upto1500_act" value="" class="form-control">
+				  	    	  		<label for="car_liability_upto1500_act">Act/Liability</label>
+				  	    	  	</div>
 
-				  	    	  	<!-- Liability Policy -->
-				  	    	  	<div style="margin-top: 20px; border:1px solid black;">
-				  	    	  	  <div class="card-header" id="headingTwoSubOne">
-				  	    	  	    <h2 class="mb-0">
-				  	    	  	      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoSubOne" aria-expanded="false" aria-controls="collapseTwoSubOne">
-				  	    	  	        Liability Policy
-				  	    	  	      </button>
-				  	    	  	    </h2>
-				  	    	  	  </div>
-				  	    	  	  <div id="collapseTwoSubOne" class="collapse" aria-labelledby="headingTwoSubOne" data-parent="#accordionMIPCSubTwo">
-				  	    	  	    <div style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px; margin-right: 20px; ">
-				  	    	  	      
-				  	      	    	<h5>Enter the values:</h4>
-				  	      	    	
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_upto1500_ll" value="" class="form-control">
+				  	    	  		<label for="car_liability_upto1500_ll">LL to Driver</label>
+				  	    	  	</div>
 
-			  	      	    		<div class="md-form">
-			  	      	    			<input type="number" id="motorcycle_liability_upto150_act" value="" class="form-control">
-			  	      	    			<label for="motorcycle_liability_upto150_act">Act/Liability</label>
-			  	      	    		</div>
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_upto1500_lpg" value="" class="form-control">
+				  	    	  		<label for="car_liability_upto1500_lpg">LPG Kit</label>
+				  	    	  	</div>
 
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_upto150_tax" class="form-control">
-				  	      	    		<label for="motorcycle_liability_upto150_tax">Tax</label>
-				  	      	    	</div>
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_upto1500_tax" value="" class="form-control">
+				  	    	  		<label for="car_liability_upto1500_tax">Tax</label>
+				  	    	  	</div>
 
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_upto150_paod" class="form-control">
-				  	      	    		<label for="motorcycle_liability_upto150_paod">PA to Owner - Driver</label>
-				  	      	    	</div>
-				  	      	    	
-				  	      	    	<center>
-				  	      	    		<button type="button" id="motorcycle_liability_upto150_btn" class="btn btn-dark-green">SAVE</button>
-				  	      	    	</center>
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_upto1500_paod" class="form-control">
+				  	    	  		<label for="car_liability_upto1500_paod">PA to Owner - Driver</label>
+				  	    	  	</div>
+				  	    	  	
+				  	    	  	<center>
+				  	    	  		<button type="button" id="car_liability_upto1500_btn" class="btn btn-dark-green">SAVE</button>
+				  	    	  	</center>
 
 				  	    	  	    </div>
 				  	    	  	  </div>
@@ -294,7 +299,7 @@
 				  	    <div class="card-header" id="headingThree">
 				  	      <h2 class="mb-0">
 				  	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				  	          150 to 350 cc
+				  	          Above 1500 cc
 				  	        </button>
 				  	      </h2>
 				  	    </div>
@@ -303,40 +308,36 @@
 
 				  	    	<!-- SubType -->
 				  	    	  <div class="accordion" id="accordionMIPCSubThree" style="margin-right: 30px; margin-left: 30px; margin-bottom: 30px; margin-top: 20px;">
-				  	    	  	<h5>Select the policy type:</h5>
+				  	    	  	<h5>Enter the values:</h4>
+				  	    	  	
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_above1500_act" value="" class="form-control">
+				  	    	  		<label for="car_liability_above1500_act">Act/Liability</label>
+				  	    	  	</div>
 
-				  	    	  	<!-- Liability Policy -->
-				  	    	  	<div style="margin-top: 20px; border:1px solid black;">
-				  	    	  	  <div class="card-header" id="headingThreeSubOne">
-				  	    	  	    <h2 class="mb-0">
-				  	    	  	      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeSubOne" aria-expanded="false" aria-controls="collapseThreeSubOne">
-				  	    	  	        Liability Policy
-				  	    	  	      </button>
-				  	    	  	    </h2>
-				  	    	  	  </div>
-				  	    	  	  <div id="collapseThreeSubOne" class="collapse" aria-labelledby="headingThreeSubOne" data-parent="#accordionMIPCSubThree">
-				  	    	  	    <div style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px; margin-right: 20px; ">
-				  	    	  	      
-				  	      	    	<h5>Enter the values:</h4>
-				  	      	    	
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_upto350_act" class="form-control">
-			  	      	    			<label for="motorcycle_liability_upto75_act">Act/Liability</label>
-				  	      	    	</div>
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_above1500_ll" value="" class="form-control">
+				  	    	  		<label for="car_liability_above1500_ll">LL to Driver</label>
+				  	    	  	</div>
 
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_upto350_tax" class="form-control">
-				  	      	    		<label for="motorcycle_liability_upto350_tax">Tax</label>
-				  	      	    	</div>
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_above1500_lpg" value="" class="form-control">
+				  	    	  		<label for="car_liability_above1500_lpg">LPG Kit</label>
+				  	    	  	</div>
 
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_upto350_paod" class="form-control">
-				  	      	    		<label for="motorcycle_liability_upto350_paod">PA to Owner - Driver</label>
-				  	      	    	</div>
-				  	      	    	
-				  	      	    	<center>
-				  	      	    		<button type="button" id="motorcycle_liability_upto350_btn" class="btn btn-dark-green">SAVE</button>
-				  	      	    	</center>
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_above1500_tax" value="" class="form-control">
+				  	    	  		<label for="car_liability_above1500_tax">Tax</label>
+				  	    	  	</div>
+
+				  	    	  	<div class="md-form">
+				  	    	  		<input type="number" id="car_liability_above1500_paod" class="form-control">
+				  	    	  		<label for="car_liability_above1500_paod">PA to Owner - Driver</label>
+				  	    	  	</div>
+				  	    	  	
+				  	    	  	<center>
+				  	    	  		<button type="button" id="car_liability_above1500_btn" class="btn btn-dark-green">SAVE</button>
+				  	    	  	</center>
 
 				  	    	  	    </div>
 				  	    	  	  </div>
@@ -363,94 +364,6 @@
 				  	    </div>
 				  	  </div>
 				  	
-				  	  <div>
-				  	    <div class="card-header" id="headingFour">
-				  	      <h2 class="mb-0">
-				  	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-				  	          350 cc and above
-				  	        </button>
-				  	      </h2>
-				  	    </div>
-				  	    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionMIPC">
-
-				  	    	<!-- SubType -->
-				  	    	  <div class="accordion" id="accordionMIPCSubFour" style="margin-right: 30px; margin-left: 30px; margin-bottom: 30px; margin-top: 20px;">
-				  	    	  	<h5>Select the policy type:</h5>
-
-				  	    	  	<!-- Liability Policy -->
-				  	    	  	<div style="margin-top: 20px; border:1px solid black;">
-				  	    	  	  <div class="card-header" id="headingFourSubOne">
-				  	    	  	    <h2 class="mb-0">
-				  	    	  	      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourSubOne" aria-expanded="false" aria-controls="collapseFourSubOne">
-				  	    	  	        Liability Policy
-				  	    	  	      </button>
-				  	    	  	    </h2>
-				  	    	  	  </div>
-				  	    	  	  <div id="collapseFourSubOne" class="collapse" aria-labelledby="headingFourSubOne" data-parent="#accordionMIPCSubFour">
-				  	    	  	    <div style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px; margin-right: 20px; ">
-				  	    	  	      
-
-				  	      	    	<h5>Enter the values:</h4>
-				  	      	    	
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_above350_act" class="form-control">
-			  	      	    			<label for="motorcycle_liability_up75_act">Act/Liability</label>
-				  	      	    	</div>
-
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_above350_tax" class="form-control">
-				  	      	    		<label for="motorcycle_liability_above350_tax">Tax</label>
-				  	      	    	</div>
-
-				  	      	    	<div class="md-form">
-				  	      	    		<input type="text" id="motorcycle_liability_above350_paod" class="form-control">
-				  	      	    		<label for="motorcycle_liability_above350_paod">PA to Owner - Driver</label>
-				  	      	    	</div>
-				  	      	    	
-				  	      	    	<center>
-				  	      	    		<button type="button" id="motorcycle_liability_above350_btn" class="btn btn-dark-green">SAVE</button>
-				  	      	    	</center>
-
-				  	    	  	    </div>
-				  	    	  	  </div>
-				  	    	  	</div>
-				  	    	  	
-				  	    	  	<!-- Package Policy -->
-				  	    	  	<div style="border:1px solid black;">
-				  	    	  	  <div class="card-header" id="headingFourSubTwo">
-				  	    	  	    <h2 class="mb-0">
-				  	    	  	      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourSubTwo" aria-expanded="false" aria-controls="collapseFourSubTwo">
-				  	    	  	        Package Policy
-				  	    	  	      </button>
-				  	    	  	    </h2>
-				  	    	  	  </div>
-				  	    	  	  <div id="collapseFourSubTwo" class="collapse" aria-labelledby="headingFourSubTwo" data-parent="#accordionMIPCSubFour">
-				  	    	  	    <div style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px; margin-right: 20px; ">
-				  	    	  	      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				  	    	  	    </div>
-				  	    	  	  </div>
-				  	    	  	</div>
-
-				  	    	  </div>
-
-				  	    </div>
-				  	  </div>
-
-<!-- 				  	  <div>
-				  	    <div class="card-header" id="headingFour">
-				  	      <h2 class="mb-0">
-				  	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-				  	          350 cc and above
-				  	        </button>
-				  	      </h2>
-				  	    </div>
-				  	    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-				  	      <div>
-				  	        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				  	      </div>
-				  	    </div>
-				  	  </div> -->
-
 				  	</div>
 
 				</div>
