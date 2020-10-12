@@ -41,6 +41,19 @@ var rootRef = firebase.database().ref().child('bus_liability_upto60');
 	toastr.success('Values saved!', 'Bus - Upto 60 Passengers (Liability)')
 })
 
+//bus_above60
+$('#bus_liability_above60_btn').click(function(){
+var rootRef = firebase.database().ref().child('bus_liability_above60');
+	rootRef.set({		
+		bus_liability_above60_act:$('#bus_liability_above60_act').val(),
+		bus_liability_above60_ll:$('#bus_liability_above60_ll').val(),
+		bus_liability_above60_lpg:$('#bus_liability_above60_lpg').val(),
+		bus_liability_above60_tax:$('#bus_liability_above60_tax').val(),
+		bus_liability_above60_paod:$('#bus_liability_above60_paod').val()
+	});
+	toastr.success('Values saved!', 'Bus - Above 60 Passengers (Liability)')
+})
+
 //Package Policy
 
 //bus_upto18
