@@ -54,6 +54,19 @@ var rootRef = firebase.database().ref().child('public_goods_liability_upto40000'
 	toastr.success('Values saved!', 'Public Goods - Upto 40000 KGs (Liability)')
 })
 
+//public_goods_above40000
+$('#public_goods_liability_above40000_btn').click(function(){
+var rootRef = firebase.database().ref().child('public_goods_liability_above40000');
+	rootRef.set({		
+		public_goods_liability_above40000_act:$('#public_goods_liability_above40000_act').val(),
+		public_goods_liability_above40000_ll:$('#public_goods_liability_above40000_ll').val(),
+		public_goods_liability_above40000_lpg:$('#public_goods_liability_above40000_lpg').val(),
+		public_goods_liability_above40000_tax:$('#public_goods_liability_above40000_tax').val(),
+		public_goods_liability_above40000_paod:$('#public_goods_liability_above40000_paod').val()
+	});
+	toastr.success('Values saved!', 'Public Goods - Above 40000 KGs (Liability)')
+})
+
 //Package Policy
 
 //public_goods_upto7500
@@ -112,11 +125,11 @@ var rootRef = firebase.database().ref().child('public_goods_package_upto40000');
 $('#public_goods_package_above40000_btn').click(function(){
 var rootRef = firebase.database().ref().child('public_goods_package_above40000');
 	rootRef.set({		
-		public_goods_package_upto20000_dop_year1:$('#public_goods_package_above40000_dop_year1').val(),
-		public_goods_package_upto20000_dop_year2:$('#public_goods_package_above40000_dop_year2').val(),
-		public_goods_package_upto20000_dop_year3:$('#public_goods_package_above40000_dop_year3').val(),
-		public_goods_package_upto20000_ndp:$('#public_goods_package_above40000_ndp').val(),
-		public_goods_package_upto20000_paod:$('#public_goods_package_above40000_paod').val()
+		public_goods_package_above40000_dop_year1:$('#public_goods_package_above40000_dop_year1').val(),
+		public_goods_package_above40000_dop_year2:$('#public_goods_package_above40000_dop_year2').val(),
+		public_goods_package_above40000_dop_year3:$('#public_goods_package_above40000_dop_year3').val(),
+		public_goods_package_above40000_ndp:$('#public_goods_package_above40000_ndp').val(),
+		public_goods_package_above40000_paod:$('#public_goods_package_above40000_paod').val()
 	});
 	toastr.success('Values saved!', 'Public Goods - Above 40000 KGs (Package)')
 })
