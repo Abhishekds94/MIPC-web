@@ -99,11 +99,11 @@ var rootRef = firebase.database().ref().child('bus_package_upto60');
 $('#bus_package_above60_btn').click(function(){
 var rootRef = firebase.database().ref().child('bus_package_above60');
 	rootRef.set({		
-		bus_package_upto60_dop_year1:$('#bus_package_above60_dop_year1').val(),
-		bus_package_upto60_dop_year2:$('#bus_package_above60_dop_year2').val(),
-		bus_package_upto60_dop_year3:$('#bus_package_above60_dop_year3').val(),
-		bus_package_upto60_ndp:$('#bus_package_above60_ndp').val(),
-		bus_package_upto60_paod:$('#bus_package_above60_paod').val()
+		bus_package_above60_dop_year1:$('#bus_package_above60_dop_year1').val(),
+		bus_package_above60_dop_year2:$('#bus_package_above60_dop_year2').val(),
+		bus_package_above60_dop_year3:$('#bus_package_above60_dop_year3').val(),
+		bus_package_above60_ndp:$('#bus_package_above60_ndp').val(),
+		bus_package_above60_paod:$('#bus_package_above60_paod').val()
 	});
 	toastr.success('Values saved!', 'Bus - Above 60 Passengers (Package)')
 })
